@@ -10,3 +10,46 @@
 .creative-card figcaption{padding:14px 16px 16px;border-top:1px solid var(--line);font-size:.76rem;line-height:1.45;color:var(--ink);font-weight:600}
 @media(max-width:980px){.creative-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:520px){.creative-section{padding-top:50px}.creative-grid{grid-template-columns:1fr}.creative-media{min-height:280px}.creative-media img{height:280px}}
+
+/* Live launch pricing */
+.pricing-section{background:linear-gradient(180deg,#fffdf8 0%,#fbf8f1 100%);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.pricing-heading{display:flex;align-items:flex-start;justify-content:space-between;gap:30px;margin-bottom:32px}
+.pricing-heading .lead{margin-bottom:0}
+.launch-badge{display:inline-flex;align-items:center;justify-content:center;white-space:nowrap;background:var(--blue);color:#fff;border-radius:999px;padding:8px 14px;font-size:.62rem;font-weight:700;letter-spacing:.12em}
+.pricing-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}
+.pricing-grid-2{grid-template-columns:repeat(2,minmax(0,1fr));max-width:900px}
+.price-card{position:relative;border:1px solid var(--line);background:#fff;padding:30px;display:flex;flex-direction:column;min-height:300px;box-shadow:0 8px 24px rgba(20,40,74,.04)}
+.price-card.featured{border-color:rgba(173,135,72,.75);box-shadow:0 16px 34px rgba(173,135,72,.12)}
+.price-label{font-size:.65rem;text-transform:uppercase;letter-spacing:.13em;color:var(--blue);font-weight:700}
+.price-card strong{display:block;font:500 clamp(2.3rem,4vw,3.5rem)/1.05 'Playfair Display',Georgia,serif;color:var(--ink);margin:14px 0 4px}
+.price-card>span:not(.price-label){font-size:.76rem;color:var(--muted)}
+.price-card p{color:var(--muted);margin:18px 0 24px}
+.price-card .button{margin-top:auto;width:max-content}
+.pricing-meta{display:flex;flex-wrap:wrap;gap:10px 24px;margin-top:20px;font-size:.76rem;color:var(--muted)}
+.pricing-meta span:first-child{font-weight:700;color:var(--blue)}
+
+/* Responsive brand creatives */
+.creative-grid{grid-template-columns:repeat(3,minmax(0,1fr))}
+.creative-media{aspect-ratio:4/5;min-height:0;height:auto;padding:14px}
+.creative-media img{width:100%;height:100%;max-height:none;object-fit:contain}
+
+/* Footer logo visibility and responsive sizing */
+.footer{background:var(--cream);color:var(--ink);border-top:1px solid var(--line)}
+.footer .logo{width:230px;height:68px;padding:8px 12px;background:#fff;border:1px solid rgba(20,40,74,.08);border-radius:12px;box-shadow:0 8px 22px rgba(20,40,74,.08)}
+.footer .logo img{width:100%;height:100%;object-fit:contain;object-position:center}
+.footer a{color:var(--ink)}
+.footer a:hover{color:var(--blue)}
+.footer .copyright{border-top-color:#d8d0c1;color:var(--muted)}
+.footer p{color:var(--muted)}
+@media(max-width:980px){
+  .pricing-heading{flex-direction:column;gap:16px}
+  .pricing-grid,.pricing-grid-2{grid-template-columns:repeat(2,minmax(0,1fr));max-width:none}
+  .footer .logo{width:210px;height:64px}
+}
+@media(max-width:520px){
+  .pricing-grid,.pricing-grid-2{grid-template-columns:1fr}
+  .price-card{min-height:0;padding:24px}
+  .pricing-meta{display:grid;gap:8px}
+  .creative-media{aspect-ratio:3/4}
+  .footer .logo{width:205px;height:62px}
+}

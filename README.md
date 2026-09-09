@@ -1,16 +1,19 @@
-# Yoga 1 Hour website
+# Yoga 1 Hour — launch-ready static website
 
-Updated website with the supplied YOGA 1 HOUR content.
+Updated from the supplied website package.
 
-Primary navigation: About us, Home Yoga, School Yoga, Corporate Yoga, Journal, Contact.
+## Improvements
+- Reworked header and footer branding with a clear Yoga1Hour lockup and “Your Daily Dose of Yoga” tagline.
+- Improved hero spacing and CTA layout so buttons never visually collide with the following section.
+- Responsive navigation, CTA sizing and spacing for desktop, tablet and mobile.
+- Added accessibility basics: skip link, navigation labels, focus-friendly controls and mobile menu state.
+- Added unique SEO titles/descriptions, canonical URLs, Open Graph/Twitter metadata, robots.txt and sitemap.xml.
+- Added Organization/WebSite structured data and FAQ structured data for answer-oriented search visibility.
+- Added practical Journal articles for the three existing blog topics and linked them from Journal.
+- Added internal links and FAQ sections to improve discoverability and answer-engine readiness.
 
-The contact form opens a pre-filled WhatsApp Business message to +91 79966 66460.
+## Important launch note
+The canonical domain is configured as https://yoga1hour.com/. If the production site uses a different canonical hostname (for example www.yoga1hour.com), update the canonical, Open Graph, sitemap and structured-data URLs before publishing.
 
-Retired Schedule, Teachers/Practitioners and Workshop pages have been removed from the delivered site.
-## Launch pricing updates
-Live website pricing is centrally configured in `js/pricing.js`. Update the values in `window.YOGA1HOUR_PRICING` for Home/Private, School and Corporate Yoga; the respective pages render the current values automatically. Timing is also configurable there and is intentionally presented as flexible on the service pages. Supplied creative artwork is retained as brand collateral and is not programmatically altered.
-
-
-
-## Branding update
-The site uses the supplied Yoga1Hour logo with the tagline “Your Daily Dose of Yoga”, including header, footer and favicon assets. CTA buttons have responsive sizing for desktop, tablet and mobile layouts, and the brand creative grid is constrained for responsive display.
+## Pricing
+Live pricing remains centrally configured in `js/pricing.js`.

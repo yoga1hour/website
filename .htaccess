@@ -1,17 +1,19 @@
 RewriteEngine On
 
 # Canonical legacy URL redirects
-RewriteRule ^index\.html$ / [R=301,L]
-RewriteRule ^home-yoga\.html$ /private-yoga-classes-at-home-bangalore/ [R=301,L]
-RewriteRule ^about\.html$ /about-us/ [R=301,L]
-RewriteRule ^school-yoga\.html$ /yoga-for-school-children-bangalore/ [R=301,L]
-RewriteRule ^corporate-yoga\.html$ /corporate-yoga-classes-bangalore/ [R=301,L]
-RewriteRule ^contact\.html$ /contact/ [R=301,L]
-RewriteRule ^blog\.html$ /blog/ [R=301,L]
-RewriteRule ^classes\.html$ /yoga-class-types/ [R=301,L]
+RewriteRule ^index\.html$ / [R=301,L,NE]
+RewriteRule ^home-yoga\.html$ /private-yoga-classes-at-home-bangalore/ [R=301,L,NE]
+RewriteRule ^school-yoga\.html$ /yoga-for-school-children-bangalore/ [R=301,L,NE]
+RewriteRule ^corporate-yoga\.html$ /corporate-yoga-classes-bangalore/ [R=301,L,NE]
+RewriteRule ^about\.html$ /about [R=301,L,NE]
+RewriteRule ^classes\.html$ /classes [R=301,L,NE]
+RewriteRule ^contact\.html$ /contact [R=301,L,NE]
+RewriteRule ^blog\.html$ /blog/ [R=301,L,NE]
+RewriteRule ^blog/([^/]+)\.html$ /blog/$1/ [R=301,L,NE]
 
-# Ensure clean URLs resolve to their physical index files
+# Canonicalize accidental double slash on classes
+RewriteCond %{THE_REQUEST} \s/+classes/+[?\s] [NC]
+RewriteRule ^classes/?$ /classes [R=301,L,NE]
+
 DirectoryIndex index.html
-
-# Prevent directory listing
 Options -Indexes

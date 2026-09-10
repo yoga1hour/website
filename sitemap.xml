@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url><loc>https://yoga1hour.com/</loc><changefreq>monthly</changefreq><priority>1.0</priority></url>
-  <url><loc>https://yoga1hour.com/about.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://yoga1hour.com/about</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://yoga1hour.com/home-yoga.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://yoga1hour.com/school-yoga.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://yoga1hour.com/corporate-yoga.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://yoga1hour.com/classes.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://yoga1hour.com/contact.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://yoga1hour.com/blog.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://yoga1hour.com/blog-how-to-make-one-hour-matter.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://yoga1hour.com/blog-simple-reset-between-meetings.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://yoga1hour.com/blog-value-of-private-practice.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://yoga1hour.com/classes</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://yoga1hour.com/contact</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://yoga1hour.com/blog/</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://yoga1hour.com/blog/blog-how-to-make-one-hour-matter/</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://yoga1hour.com/blog/blog-simple-reset-between-meetings/</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://yoga1hour.com/blog/blog-value-of-private-practice/</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
 </urlset>

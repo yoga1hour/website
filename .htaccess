@@ -1,33 +1,15 @@
 RewriteEngine On
-Options -MultiViews
 
-# Permanent redirects from legacy HTML URLs to clean SEO URLs
-RewriteCond %{THE_REQUEST} \s/+index\.html(?:[?\s]) [NC]
+# Canonical legacy URL redirects
 RewriteRule ^index\.html$ / [R=301,L]
-RewriteCond %{THE_REQUEST} \s/+home-yoga\.html(?:[?\s]) [NC]
 RewriteRule ^home-yoga\.html$ /private-yoga-classes-at-home-bangalore/ [R=301,L]
-RewriteCond %{THE_REQUEST} \s/+school-yoga\.html(?:[?\s]) [NC]
 RewriteRule ^school-yoga\.html$ /yoga-for-school-children-bangalore/ [R=301,L]
-RewriteCond %{THE_REQUEST} \s/+corporate-yoga\.html(?:[?\s]) [NC]
 RewriteRule ^corporate-yoga\.html$ /corporate-yoga-classes-bangalore/ [R=301,L]
-RewriteCond %{THE_REQUEST} \s/+contact\.html(?:[?\s]) [NC]
 RewriteRule ^contact\.html$ / [R=301,L]
-RewriteCond %{THE_REQUEST} \s/+blog\.html(?:[?\s]) [NC]
-RewriteRule ^blog\.html$ /blog [R=301,L]
+RewriteRule ^blog\.html$ /blog/ [R=301,L]
 
-# Legacy blog article URLs -> clean /blog/ URLs
-RewriteRule ^blog-how-to-make-one-hour-matter\.html$ /blog/blog-how-to-make-one-hour-matter/ [R=301,L]
-RewriteRule ^blog-simple-reset-between-meetings\.html$ /blog/blog-simple-reset-between-meetings/ [R=301,L]
-RewriteRule ^blog-value-of-private-practice\.html$ /blog/blog-value-of-private-practice/ [R=301,L]
+# Ensure clean URLs resolve to their physical index files
+DirectoryIndex index.html
 
-# Clean SEO routes
-RewriteRule ^private-yoga-classes-at-home-bangalore/?$ home-yoga.html [L]
-RewriteRule ^yoga-for-school-children-bangalore/?$ school-yoga.html [L]
-RewriteRule ^corporate-yoga-classes-bangalore/?$ corporate-yoga.html [L]
-RewriteRule ^blog/?$ blog.html [L]
-RewriteRule ^blog/private-yoga-at-home-vs-studio-group-which-is-better-bangalore/?$ private-yoga-at-home-vs-studio-group-which-is-better-bangalore.html [L]
-RewriteRule ^blog/why-yoga-must-be-mandatory-for-school-children-bangalore/?$ why-yoga-must-be-mandatory-for-school-children-bangalore.html [L]
-RewriteRule ^blog/corporate-yoga-before-after-work-why-bangalore-it-employees-losing-creativity/?$ corporate-yoga-before-after-work-why-bangalore-it-employees-losing-creativity.html [L]
-RewriteRule ^blog/blog-how-to-make-one-hour-matter/?$ blog-how-to-make-one-hour-matter.html [L]
-RewriteRule ^blog/blog-simple-reset-between-meetings/?$ blog-simple-reset-between-meetings.html [L]
-RewriteRule ^blog/blog-value-of-private-practice/?$ blog-value-of-private-practice.html [L]
+# Prevent directory listing
+Options -Indexes

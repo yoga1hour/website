@@ -8,6 +8,7 @@ RewriteRule ^school-yoga\.html$ /yoga-for-school-children-bangalore/ [R=301,L]
 RewriteRule ^corporate-yoga\.html$ /corporate-yoga-classes-bangalore/ [R=301,L]
 RewriteRule ^contact\.html$ /contact/ [R=301,L]
 RewriteRule ^blog\.html$ /blog/ [R=301,L]
+RewriteRule ^classes\.html$ /yoga-class-types/ [R=301,L]
 
 # Ensure clean URLs resolve to their physical index files
 DirectoryIndex index.html

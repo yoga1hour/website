@@ -2,13 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url><loc>https://yoga1hour.com/</loc><changefreq>monthly</changefreq><priority>1.0</priority></url>
   <url><loc>https://yoga1hour.com/about.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://yoga1hour.com/home-yoga.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://yoga1hour.com/school-yoga.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://yoga1hour.com/corporate-yoga.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://yoga1hour.com/classes.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://yoga1hour.com/contact.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://yoga1hour.com/blog.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://yoga1hour.com/blog-how-to-make-one-hour-matter.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://yoga1hour.com/blog-simple-reset-between-meetings.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://yoga1hour.com/blog-value-of-private-practice.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://yoga1hour.com/private-yoga-classes-at-home-bangalore/</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://yoga1hour.com/yoga-for-school-children-bangalore/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://yoga1hour.com/corporate-yoga-classes-bangalore/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://yoga1hour.com/classes.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://yoga1hour.com/blog</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://yoga1hour.com/blog/private-yoga-at-home-vs-studio-group-which-is-better-bangalore/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://yoga1hour.com/blog/why-yoga-must-be-mandatory-for-school-children-bangalore/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://yoga1hour.com/blog/corporate-yoga-before-after-work-why-bangalore-it-employees-losing-creativity/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://yoga1hour.com/blog/blog-how-to-make-one-hour-matter/</loc><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://yoga1hour.com/blog/blog-simple-reset-between-meetings/</loc><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://yoga1hour.com/blog/blog-value-of-private-practice/</loc><changefreq>weekly</changefreq><priority>0.6</priority></url>
 </urlset>

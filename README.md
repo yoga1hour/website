@@ -1,19 +1,19 @@
-# Yoga 1 Hour — launch-ready static website
+# Yoga 1 Hour — SEO/AEO responsive launch package
 
-Updated from the supplied website package.
+## Included
+- Clean canonical URLs with directory `index.html` pages.
+- Legacy `.html` URL redirects via `.htaccess` plus fallback redirect documents.
+- Homepage rebuilt around private Home Yoga, comparison/USP, Class Types, process, FAQs and latest blogs.
+- Bangalore-focused SEO titles, meta descriptions, canonical URLs, Open Graph/Twitter metadata and structured data.
+- Three new SEO blog articles under `/blog/`.
+- Existing Journal articles moved to clean `/blog/.../` URLs.
+- Central launch pricing remains in `js/pricing.js`.
+- Responsive creative-image grids with local assets and descriptive alt text.
+- No internal navigation intentionally points to legacy `.html` URLs.
 
-## Improvements
-- Reworked header and footer branding with a clear Yoga1Hour lockup and “Your Daily Dose of Yoga” tagline.
-- Improved hero spacing and CTA layout so buttons never visually collide with the following section.
-- Responsive navigation, CTA sizing and spacing for desktop, tablet and mobile.
-- Added accessibility basics: skip link, navigation labels, focus-friendly controls and mobile menu state.
-- Added unique SEO titles/descriptions, canonical URLs, Open Graph/Twitter metadata, robots.txt and sitemap.xml.
-- Added Organization/WebSite structured data and FAQ structured data for answer-oriented search visibility.
-- Added practical Journal articles for the three existing blog topics and linked them from Journal.
-- Added internal links and FAQ sections to improve discoverability and answer-engine readiness.
-
-## Important launch note
-The canonical domain is configured as https://yoga1hour.com/. If the production site uses a different canonical hostname (for example www.yoga1hour.com), update the canonical, Open Graph, sitemap and structured-data URLs before publishing.
-
-## Pricing
-Live pricing remains centrally configured in `js/pricing.js`.
+## Production notes
+1. Upload the entire package contents to the web root.
+2. Keep `.htaccess` enabled on Apache/LiteSpeed hosting so old `.html` URLs 301 redirect to clean URLs.
+3. If the host is Nginx/static-only, implement equivalent 301 rules at the server/CDN layer.
+4. Submit `/sitemap.xml` in Google Search Console.
+5. Connect verified Google Business Profile/review and consented testimonial videos when their final embed URLs/assets are available; the homepage uses non-broken placeholders rather than inventing third-party proof.

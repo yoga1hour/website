@@ -105,8 +105,99 @@
 <a href="https://www.youtube.com/@Yoga1Hour" target="_blank" rel="noopener noreferrer" aria-label="YouTube" title="YouTube"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 7.2a2.6 2.6 0 0 0-1.8-1.8C17.6 5 12 5 12 5s-5.6 0-7.2.4A2.6 2.6 0 0 0 3 7.2 27 27 0 0 0 2.6 12 27 27 0 0 0 3 16.8a2.6 2.6 0 0 0 1.8 1.8C6.4 19 12 19 12 19s5.6 0 7.2-.4a2.6 2.6 0 0 0 1.8-1.8 27 27 0 0 0 .4-4.8 27 27 0 0 0-.4-4.8Z" fill="currentColor"/><path d="m10 9 5 3-5 3V9Z" fill="white"/></svg></a>
 <a href="https://x.com/Yoga1Hour" target="_blank" rel="noopener noreferrer" aria-label="X" title="X"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 4h3.8l3.5 4.9L16.2 4H19l-5.4 6.2L19.5 20h-3.8l-3.9-5.3L7.2 20H4.4l5.6-6.6L5 4Zm3.1 2 7.9 12h1.4L9.5 6H8.1Z" fill="currentColor"/></svg></a>
 </div></div>
-<div><h3>Explore</h3><a href="/about/">About</a><a href="/private-yoga-classes-at-home-bangalore/">Home Yoga</a><a href="/yoga-for-school-children-bangalore/">School Yoga</a></div>
+<div><h3>Explore</h3><a href="/about/">About</a><a href="/private-yoga-classes-at-home-bangalore/">Home Yoga</a><a href="/yoga-for-school-children-bangalore/">School Yoga</a><a href="/privacy-policy/">Privacy Policy</a></div>
 <div><h3>Yoga for every setting</h3><a href="/corporate-yoga-classes-bangalore/">Corporate Yoga</a><a href="/classes/">Class Types</a><a href="/blog/">Journal</a></div>
 <div><h3>Connect</h3><a href="/contact/">Contact</a><a href="https://wa.me/917996666460" target="_blank" rel="noopener">WhatsApp</a><p>Serving Bengaluru and selected surrounding locations.</p></div>
 </div><div class="container copyright">© 2026 Yoga 1 Hour. All rights reserved.</div>
-</footer><script src="/js/pricing.js"></script><script src="/js/main.js"></script></body></html>
+</footer><script src="/js/pricing.js"></script><script src="/js/main.js"></script>
+<div class="cookie-actions">
+        <button class="cookie-btn" type="button" id="rejectCookies">Reject optional</button>
+        <button class="cookie-btn accept" type="button" id="acceptCookies">Accept</button>
+      </div>
+    </div>
+  </div>
+
+  <button class="cookie-settings" id="cookieSettings" type="button" aria-label="Open cookie settings">
+    Cookie Settings
+  </button>
+
+  <script>
+    (function () {
+      "use strict";
+
+      var STORAGE_KEY = "yoga1hour_cookie_consent";
+      var POLICY_VERSION = "1.0";
+      var banner = document.getElementById("cookieBanner");
+      var settings = document.getElementById("cookieSettings");
+      var accept = document.getElementById("acceptCookies");
+      var reject = document.getElementById("rejectCookies");
+      var menuButton = document.getElementById("menuButton");
+      var nav = document.getElementById("site-navigation");
+
+      function readConsent() {
+        try {
+          var raw = localStorage.getItem(STORAGE_KEY);
+          return raw ? JSON.parse(raw) : null;
+        } catch (e) {
+          return null;
+        }
+      }
+
+      function saveConsent(status) {
+        try {
+          localStorage.setItem(STORAGE_KEY, JSON.stringify({
+            status: status,
+            timestamp: new Date().toISOString(),
+            policyVersion: POLICY_VERSION
+          }));
+        } catch (e) {
+          // If storage is blocked, the website remains usable.
+        }
+      }
+
+      function showBanner() {
+        banner.style.display = "block";
+        settings.style.display = "none";
+      }
+
+      function hideBanner() {
+        banner.style.display = "none";
+        settings.style.display = "block";
+      }
+
+      var consent = readConsent();
+      if (consent && (consent.status === "accepted" || consent.status === "rejected")) {
+        hideBanner();
+      } else {
+        showBanner();
+      }
+
+      accept.addEventListener("click", function () {
+        saveConsent("accepted");
+        hideBanner();
+      });
+
+      reject.addEventListener("click", function () {
+        saveConsent("rejected");
+        hideBanner();
+      });
+
+      settings.addEventListener("click", function () {
+        showBanner();
+      });
+
+      menuButton.addEventListener("click", function () {
+        var open = nav.classList.toggle("open");
+        menuButton.setAttribute("aria-expanded", open ? "true" : "false");
+      });
+
+      nav.querySelectorAll("a").forEach(function (link) {
+        link.addEventListener("click", function () {
+          nav.classList.remove("open");
+          menuButton.setAttribute("aria-expanded", "false");
+        });
+      });
+    }());
+  </script>
+
+</body></html>

@@ -1,4 +1,15 @@
 document.addEventListener("DOMContentLoaded",()=>{
+  const COOKIE_KEY="yoga1hour_cookie_consent";
+  const cookieBanner=document.getElementById("cookie-banner");
+  const cookieAccept=cookieBanner?.querySelector("[data-cookie-accept]");
+  const cookieDecline=cookieBanner?.querySelector("[data-cookie-decline]");
+  const hideCookieBanner=()=>{if(cookieBanner) cookieBanner.hidden=true;};
+  const saveCookieChoice=(value)=>{try{localStorage.setItem(COOKIE_KEY,value);}catch(e){} hideCookieBanner();};
+  let cookieChoice=null;
+  try{cookieChoice=localStorage.getItem(COOKIE_KEY);}catch(e){}
+  if(cookieBanner && !cookieChoice) cookieBanner.hidden=false;
+  cookieAccept?.addEventListener("click",()=>saveCookieChoice("accepted"));
+  cookieDecline?.addEventListener("click",()=>saveCookieChoice("declined"));
   const menu=document.querySelector(".menu"),nav=document.querySelector(".nav");
   if(menu&&nav){
     menu.addEventListener("click",()=>{

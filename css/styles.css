@@ -112,3 +112,28 @@
 .cookie-banner[hidden]{display:none}
 .cookie-copy{min-width:0}.cookie-copy strong{display:block;margin-bottom:4px;font-size:.95rem}.cookie-copy p{margin:0 0 5px;color:var(--muted);font-size:.78rem;line-height:1.55}.cookie-copy a{font-size:.76rem;color:var(--blue);text-decoration:underline}.cookie-actions{display:flex;gap:9px;flex:0 0 auto}.cookie-actions .button{min-width:110px}
 @media(max-width:640px){.cookie-banner{left:10px;right:10px;bottom:10px;align-items:stretch;flex-direction:column;gap:13px;padding:16px}.cookie-actions{width:100%}.cookie-actions .button{flex:1;min-width:0}.social-links{gap:8px}}
+
+.answer-box{margin:28px 0;padding:24px 26px;background:#f8f5ee;border:1px solid var(--line);border-left:4px solid var(--blue)}
+.answer-box h2{margin:0 0 10px;font-size:1.45rem}
+.answer-box p{margin:0;color:#3f4a5a}
+.local-note{font-size:.92rem;color:var(--muted);padding:16px 18px;border:1px solid var(--line);background:#fff}
+.article-meta{display:flex;flex-wrap:wrap;gap:10px;margin-top:18px;color:var(--muted);font-size:.9rem}
+.article-meta span{padding:6px 10px;border:1px solid var(--line);background:#fff}
+.related-guides{margin-top:48px;padding-top:28px;border-top:1px solid var(--line)}
+.related-guides .grid{margin-top:18px}
+
+/* Local 100-guide hub */
+.blog-tools{margin:30px 0 38px;padding:24px;background:#fff;border:1px solid var(--line);border-radius:12px}
+.blog-tools label{display:block;margin-bottom:8px}
+.blog-tools input{max-width:760px;margin:0 0 16px}
+.blog-filter-buttons{display:flex;flex-wrap:wrap;gap:10px}
+.blog-filter{min-width:auto}
+.blog-filter.active{background:var(--blue);border-color:var(--blue);color:#fff}
+.blog-results{margin:14px 0 0;color:var(--muted);font-size:.85rem}
+.local-blog-card[hidden],.local-guide-group[hidden]{display:none!important}
+.article-thumb{min-height:76px;display:flex;align-items:center;justify-content:center;background:var(--cream);color:var(--blue);font-size:.7rem;font-weight:700;letter-spacing:.12em}
+@media(max-width:520px){
+ .blog-tools{padding:18px}
+ .blog-filter-buttons{display:grid;grid-template-columns:1fr}
+ .blog-filter{width:100%}
+}

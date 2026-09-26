@@ -20,4 +20,10 @@ RewriteRule ^blog-simple-reset-between-meetings\.html$ /blog/simple-reset-betwee
 RewriteRule ^blog-value-of-private-practice\.html$ /blog/value-of-private-practice/ [R=301,L,NE]
 
 # Directory URLs are served by their index.html without exposing the filename.
+
+# Existing blog directory aliases -> canonical clean URLs
+RewriteRule ^blog/blog-how-to-make-one-hour-matter/?$ /blog/how-to-make-one-hour-matter/ [R=301,L,NE]
+RewriteRule ^blog/blog-simple-reset-between-meetings/?$ /blog/simple-reset-between-meetings/ [R=301,L,NE]
+RewriteRule ^blog/blog-value-of-private-practice/?$ /blog/value-of-private-practice/ [R=301,L,NE]
+
 DirectoryIndex index.html
